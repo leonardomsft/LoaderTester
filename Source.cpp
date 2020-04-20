@@ -52,7 +52,7 @@ int main(int argc, char* argv[])
 
 			if (hModule == NULL)
 			{
-				printf("Error loading %S\n", entry.path().c_str());
+				printf("Error %d loading %S\n", GetLastError(), entry.path().c_str());
 
 			}
 			else {
